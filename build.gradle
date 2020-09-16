@@ -1,0 +1,156 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.4.10"
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.0.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    //编译相关
+    ext.compileSdkVer = 28
+    ext.buildToolsVer = "29.0.3"
+    ext.minSdkVer = 21
+    ext.targetSdkVer = 28
+
+    //Android 原生库相关
+    ext.coreVer = "1.0.0"
+    ext.appcompatVer = "1.1.0"
+    ext.corektxVer = "1.3.0"
+    ext.constraintLayoutVer = "1.1.3"
+    ext.materialVer = "1.2.1"
+    ext.recyclerViewVer = "1.1.0"
+    ext.cardViewVer = "1.0.0"
+    ext.fragmentVer = "1.0.0"
+    ext.gridLayoutVer = "1.0.0"
+    ext.exifinterfaceVer = "1.2.0"
+    ext.annotationVer = "1.1.0"
+
+    //Rx系列
+    ext.rxjavaVer = "2.2.12"
+    ext.rxandroidVer = "2.1.1"
+
+    //网络相关
+    ext.retrofitVer = "2.6.1"
+    ext.retrofitRxjavaVer = "2.5.0"
+    ext.retrofitConverterGsonVer = "2.6.1"
+    ext.retrofitConverterScalarsVer = "2.6.1"
+    ext.okhttpVer = "4.2.1"
+    ext.logInterceptorVer = "4.2.1"
+
+    //Route
+    ext.arouterVer = "1.4.1"
+    ext.arouterCompilerVer = "1.2.2"
+    ext.arouterAnnotationVer = "1.0.4"
+
+    //权限管理
+    ext.permissionVer = "3.3.1"
+
+    //Json解析相关
+    ext.gsonVer = "2.8.5"
+
+    //日志打印相关
+    ext.loggerVer = "2.2.0"
+
+    //推送相关
+    ext.jpushVer = "3.3.4"
+    ext.jcoreVer = "2.1.2"
+
+    //RecyclerView相关
+    //适配器
+    ext.recyclerAdapterVer = "3.0.4"
+    // RecyclerView Manager
+    //标签
+    ext.chipsLayoutManagerVer = "0.3.7@aar"
+    //卡片堆叠效果
+    ext.FocusLayoutManagerVer = "1.0.2"
+
+    //刷新相关
+    ext.smartRefreshVer = "1.1.0"
+    ext.smartRefreshHeaderVer = "1.1.0"
+
+    //事件总线
+    ext.eventBusVer = "3.1.1"
+
+    //对话框
+    ext.materialDialogCoreVer = "3.1.0"
+    ext.materialDialogBottomSheets = "3.1.0"
+
+    //升级库
+    ext.updateVer = "2.2.1"
+
+    //图片和视频
+    ext.glideVer = "4.10.0"
+    ext.photoViewVer = "2.3.0"
+    ext.bmPhotoViewVer = "2.0.7"
+    ext.dkPlayerVer = "3.2.6"
+    ext.videoCacheVer = "2.7.0"
+    ext.exoplayerVer = "2.9.1"
+    ext.MD360PlayerVer = "2.5.0"
+
+    //状态View
+    ext.stateViewVer = "1.5.4"
+
+    //Web-Socket
+    ext.JaveWebSocketVer = "1.3.0"
+
+    //引导页
+    ext.NewbieGuideVer = "v2.4.0"
+
+    //RangeSeekBar
+    ext.RangeSeekBarVer = "v2.0.4"
+
+    //小程序
+    ext.weChatSdkVer = "5.4.0"
+
+    //高德地图
+    ext.amap3dmapVer = "6.6.0"
+    ext.amapLocationVer = "4.5.0"
+    ext.amapSearchVer = "6.5.0.1"
+
+    //图表
+    ext.MPAndroidChartVer = "v3.1.0"
+
+    //PickerView
+    ext.PickerViewVer = "3.2.6"
+
+    //错误统计bugly
+    ext.buglyVer = "3.1.0"
+
+    //鲁班turbo
+    ext.lubanTurboVer = "1.0.0"
+
+    //画板
+    ext.painterVer = "1.0.0"
+
+    //BubbleView
+    ext.bubbleVer = "1.0.3"
+
+    //倒计时View
+    ext.cocuntDownVer = "2.1.6"
+
+    //工具类-哆啦A梦
+    ext.doraemonVer = "3.1.2"
+}

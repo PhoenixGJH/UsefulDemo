@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UsefulDemo</string>
+    <string name="link_three">三方库<a href='https://github.com/saket/Better-Link-Movement-Method\'>地址</a></string>
+</resources>
